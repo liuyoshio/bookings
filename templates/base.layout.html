@@ -20,6 +20,7 @@
     </head>
 
     <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -112,6 +113,18 @@
                 confirmButtonText: confirmationButtonText
             })
         }
+
+        {{with .Error}}
+        notify("{{.}}", "error")
+        {{end}}
+
+        {{with .Flash}}
+        notify("{{.}}", "success")
+        {{end}}
+
+        {{with .Warning}}
+        notify("{{.}}", "warning")
+        {{end}}
 
         function Prompt() {
             let toast = function(c) {
