@@ -15,7 +15,6 @@
                 <div class="form-group mt-3">
                     <label for="first_name">First name:</label>
                     {{with .Form.Errors.Get "first_name"}}
-
                         <label class="text-danger">{{.}}</label>
                     {{end}}
                     <input type="text"  name="first_name"

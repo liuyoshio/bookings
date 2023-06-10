@@ -1,0 +1,19 @@
+mode: set
+github.com/liuyoshio/bookings/internal/forms/errors.go:6.44,8.2 1 1
+github.com/liuyoshio/bookings/internal/forms/errors.go:11.42,13.18 2 0
+github.com/liuyoshio/bookings/internal/forms/errors.go:13.18,15.3 1 0
+github.com/liuyoshio/bookings/internal/forms/errors.go:16.2,16.14 1 0
+github.com/liuyoshio/bookings/internal/forms/forms.go:17.29,19.2 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:22.33,27.2 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:29.43,30.31 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:30.31,32.37 2 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:32.37,34.4 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:39.56,41.13 2 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:41.13,44.3 2 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:45.2,45.13 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:48.74,50.21 2 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:50.21,53.3 2 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:54.2,54.13 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:58.43,59.40 1 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:59.40,62.3 2 1
+github.com/liuyoshio/bookings/internal/forms/forms.go:63.2,63.13 1 1
