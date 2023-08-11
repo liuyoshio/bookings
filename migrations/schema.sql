@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: reservations; Type: TABLE; Schema: public; Owner: terry
+-- Name: reservations; Type: TABLE; Schema: public; Owner: yoshio
 --
 
 CREATE TABLE public.reservations (
@@ -38,10 +38,10 @@ CREATE TABLE public.reservations (
 );
 
 
-ALTER TABLE public.reservations OWNER TO terry;
+ALTER TABLE public.reservations OWNER TO yoshio;
 
 --
--- Name: reservations_id_seq; Type: SEQUENCE; Schema: public; Owner: terry
+-- Name: reservations_id_seq; Type: SEQUENCE; Schema: public; Owner: yoshio
 --
 
 CREATE SEQUENCE public.reservations_id_seq
@@ -53,17 +53,17 @@ CREATE SEQUENCE public.reservations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.reservations_id_seq OWNER TO terry;
+ALTER TABLE public.reservations_id_seq OWNER TO yoshio;
 
 --
--- Name: reservations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: terry
+-- Name: reservations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: yoshio
 --
 
 ALTER SEQUENCE public.reservations_id_seq OWNED BY public.reservations.id;
 
 
 --
--- Name: restrictions; Type: TABLE; Schema: public; Owner: terry
+-- Name: restrictions; Type: TABLE; Schema: public; Owner: yoshio
 --
 
 CREATE TABLE public.restrictions (
@@ -74,10 +74,10 @@ CREATE TABLE public.restrictions (
 );
 
 
-ALTER TABLE public.restrictions OWNER TO terry;
+ALTER TABLE public.restrictions OWNER TO yoshio;
 
 --
--- Name: restrictions_id_seq; Type: SEQUENCE; Schema: public; Owner: terry
+-- Name: restrictions_id_seq; Type: SEQUENCE; Schema: public; Owner: yoshio
 --
 
 CREATE SEQUENCE public.restrictions_id_seq
@@ -89,17 +89,17 @@ CREATE SEQUENCE public.restrictions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.restrictions_id_seq OWNER TO terry;
+ALTER TABLE public.restrictions_id_seq OWNER TO yoshio;
 
 --
--- Name: restrictions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: terry
+-- Name: restrictions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: yoshio
 --
 
 ALTER SEQUENCE public.restrictions_id_seq OWNED BY public.restrictions.id;
 
 
 --
--- Name: room_restrictions; Type: TABLE; Schema: public; Owner: terry
+-- Name: room_restrictions; Type: TABLE; Schema: public; Owner: yoshio
 --
 
 CREATE TABLE public.room_restrictions (
@@ -114,10 +114,10 @@ CREATE TABLE public.room_restrictions (
 );
 
 
-ALTER TABLE public.room_restrictions OWNER TO terry;
+ALTER TABLE public.room_restrictions OWNER TO yoshio;
 
 --
--- Name: room_restrictions_id_seq; Type: SEQUENCE; Schema: public; Owner: terry
+-- Name: room_restrictions_id_seq; Type: SEQUENCE; Schema: public; Owner: yoshio
 --
 
 CREATE SEQUENCE public.room_restrictions_id_seq
@@ -129,17 +129,17 @@ CREATE SEQUENCE public.room_restrictions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.room_restrictions_id_seq OWNER TO terry;
+ALTER TABLE public.room_restrictions_id_seq OWNER TO yoshio;
 
 --
--- Name: room_restrictions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: terry
+-- Name: room_restrictions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: yoshio
 --
 
 ALTER SEQUENCE public.room_restrictions_id_seq OWNED BY public.room_restrictions.id;
 
 
 --
--- Name: rooms; Type: TABLE; Schema: public; Owner: terry
+-- Name: rooms; Type: TABLE; Schema: public; Owner: yoshio
 --
 
 CREATE TABLE public.rooms (
@@ -150,10 +150,10 @@ CREATE TABLE public.rooms (
 );
 
 
-ALTER TABLE public.rooms OWNER TO terry;
+ALTER TABLE public.rooms OWNER TO yoshio;
 
 --
--- Name: rooms_id_seq; Type: SEQUENCE; Schema: public; Owner: terry
+-- Name: rooms_id_seq; Type: SEQUENCE; Schema: public; Owner: yoshio
 --
 
 CREATE SEQUENCE public.rooms_id_seq
@@ -165,17 +165,17 @@ CREATE SEQUENCE public.rooms_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.rooms_id_seq OWNER TO terry;
+ALTER TABLE public.rooms_id_seq OWNER TO yoshio;
 
 --
--- Name: rooms_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: terry
+-- Name: rooms_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: yoshio
 --
 
 ALTER SEQUENCE public.rooms_id_seq OWNED BY public.rooms.id;
 
 
 --
--- Name: schema_migration; Type: TABLE; Schema: public; Owner: terry
+-- Name: schema_migration; Type: TABLE; Schema: public; Owner: yoshio
 --
 
 CREATE TABLE public.schema_migration (
@@ -183,10 +183,10 @@ CREATE TABLE public.schema_migration (
 );
 
 
-ALTER TABLE public.schema_migration OWNER TO terry;
+ALTER TABLE public.schema_migration OWNER TO yoshio;
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: terry
+-- Name: users; Type: TABLE; Schema: public; Owner: yoshio
 --
 
 CREATE TABLE public.users (
@@ -201,10 +201,10 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO terry;
+ALTER TABLE public.users OWNER TO yoshio;
 
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: terry
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: yoshio
 --
 
 CREATE SEQUENCE public.users_id_seq
@@ -216,52 +216,52 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO terry;
+ALTER TABLE public.users_id_seq OWNER TO yoshio;
 
 --
--- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: terry
+-- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: yoshio
 --
 
 ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
 
 
 --
--- Name: reservations id; Type: DEFAULT; Schema: public; Owner: terry
+-- Name: reservations id; Type: DEFAULT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.reservations ALTER COLUMN id SET DEFAULT nextval('public.reservations_id_seq'::regclass);
 
 
 --
--- Name: restrictions id; Type: DEFAULT; Schema: public; Owner: terry
+-- Name: restrictions id; Type: DEFAULT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.restrictions ALTER COLUMN id SET DEFAULT nextval('public.restrictions_id_seq'::regclass);
 
 
 --
--- Name: room_restrictions id; Type: DEFAULT; Schema: public; Owner: terry
+-- Name: room_restrictions id; Type: DEFAULT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.room_restrictions ALTER COLUMN id SET DEFAULT nextval('public.room_restrictions_id_seq'::regclass);
 
 
 --
--- Name: rooms id; Type: DEFAULT; Schema: public; Owner: terry
+-- Name: rooms id; Type: DEFAULT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.rooms ALTER COLUMN id SET DEFAULT nextval('public.rooms_id_seq'::regclass);
 
 
 --
--- Name: users id; Type: DEFAULT; Schema: public; Owner: terry
+-- Name: users id; Type: DEFAULT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
 
 
 --
--- Name: reservations reservations_pkey; Type: CONSTRAINT; Schema: public; Owner: terry
+-- Name: reservations reservations_pkey; Type: CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.reservations
@@ -269,7 +269,7 @@ ALTER TABLE ONLY public.reservations
 
 
 --
--- Name: restrictions restrictions_pkey; Type: CONSTRAINT; Schema: public; Owner: terry
+-- Name: restrictions restrictions_pkey; Type: CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.restrictions
@@ -277,7 +277,7 @@ ALTER TABLE ONLY public.restrictions
 
 
 --
--- Name: room_restrictions room_restrictions_pkey; Type: CONSTRAINT; Schema: public; Owner: terry
+-- Name: room_restrictions room_restrictions_pkey; Type: CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.room_restrictions
@@ -285,7 +285,7 @@ ALTER TABLE ONLY public.room_restrictions
 
 
 --
--- Name: rooms rooms_pkey; Type: CONSTRAINT; Schema: public; Owner: terry
+-- Name: rooms rooms_pkey; Type: CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.rooms
@@ -293,7 +293,7 @@ ALTER TABLE ONLY public.rooms
 
 
 --
--- Name: schema_migration schema_migration_pkey; Type: CONSTRAINT; Schema: public; Owner: terry
+-- Name: schema_migration schema_migration_pkey; Type: CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.schema_migration
@@ -301,7 +301,7 @@ ALTER TABLE ONLY public.schema_migration
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: terry
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.users
@@ -309,56 +309,56 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: reservations_email_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: reservations_email_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE INDEX reservations_email_idx ON public.reservations USING btree (email);
 
 
 --
--- Name: reservations_last_name_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: reservations_last_name_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE INDEX reservations_last_name_idx ON public.reservations USING btree (last_name);
 
 
 --
--- Name: room_restrictions_reservation_id_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: room_restrictions_reservation_id_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE INDEX room_restrictions_reservation_id_idx ON public.room_restrictions USING btree (reservation_id);
 
 
 --
--- Name: room_restrictions_room_id_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: room_restrictions_room_id_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE INDEX room_restrictions_room_id_idx ON public.room_restrictions USING btree (room_id);
 
 
 --
--- Name: room_restrictions_start_date_end_date_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: room_restrictions_start_date_end_date_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE INDEX room_restrictions_start_date_end_date_idx ON public.room_restrictions USING btree (start_date, end_date);
 
 
 --
--- Name: schema_migration_version_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: schema_migration_version_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE UNIQUE INDEX schema_migration_version_idx ON public.schema_migration USING btree (version);
 
 
 --
--- Name: users_email_idx; Type: INDEX; Schema: public; Owner: terry
+-- Name: users_email_idx; Type: INDEX; Schema: public; Owner: yoshio
 --
 
 CREATE UNIQUE INDEX users_email_idx ON public.users USING btree (email);
 
 
 --
--- Name: reservations reservations_rooms_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: terry
+-- Name: reservations reservations_rooms_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.reservations
@@ -366,7 +366,7 @@ ALTER TABLE ONLY public.reservations
 
 
 --
--- Name: room_restrictions room_restrictions_reservations_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: terry
+-- Name: room_restrictions room_restrictions_reservations_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.room_restrictions
@@ -374,7 +374,7 @@ ALTER TABLE ONLY public.room_restrictions
 
 
 --
--- Name: room_restrictions room_restrictions_restrictions_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: terry
+-- Name: room_restrictions room_restrictions_restrictions_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.room_restrictions
@@ -382,7 +382,7 @@ ALTER TABLE ONLY public.room_restrictions
 
 
 --
--- Name: room_restrictions room_restrictions_rooms_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: terry
+-- Name: room_restrictions room_restrictions_rooms_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: yoshio
 --
 
 ALTER TABLE ONLY public.room_restrictions

@@ -33,6 +33,7 @@ func ConnectSQL(dsn string) (*DB, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	return dbConn, nil
 }
 
