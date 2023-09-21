@@ -1,6 +1,6 @@
 # Hotel Bookings
 
-This is the repository for the hotel booking web.
+This is a full-stack hotel booking web written in Golang.
 
 - Built-in Go version 1.20
 - Uses the Chi router
